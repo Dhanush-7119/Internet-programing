@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Foodie</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="user-actions">
+            <a href="#" id="loginBtn">Login</a>
+            <a href="#" id="cartBtn">Cart (0)</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>Delicious Food, Delivered To You</h1>
+        <button onclick="showMenu()">Order Now</button>
+    </section>
+    
+    <section class="menu" id="menu">
+        <!-- Menu items will be injected here by JavaScript -->
+    </section>
+    
+    <div class="cart-modal" id="cartModal">
+        <h2>Your Cart</h2>
+        <div id="cartItems">
+            <!-- Cart items will be injected here by JavaScript -->
+        </div>
+        <p id="totalPrice">Total: $0.00</p>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="closeCart()">Close</button>
+    </div>
+    
+    <footer>
+        <p>© 2024 Foodie. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
